@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Found a dog? Please call!</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #fffbf0;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+    .card {
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 2rem;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    img.dog-photo {
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #f4a261;
+    }
+    h1 { font-size: 1.8rem; color: #e76f51; margin-bottom: 0.25rem; }
+    .subtitle { font-size: 1rem; color: #555; margin-bottom: 1.5rem; }
+    .info { text-align: left; margin-bottom: 1.5rem; line-height: 1.8; }
+    .info span { font-weight: bold; }
+    a.cta {
+      display: block;
+      background: #e76f51;
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      border-radius: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+    }
+    a.cta.secondary { background: #457b9d; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="dog-photo" src="dog.jpg" alt="Photo of Rex" />
+    <h1>I found Rex! 🐾</h1>
+    <p class="subtitle">This dog is lost. Please contact the owner.</p>
+    <div class="info">
+      <p><span>Breed:</span> Golden Retriever</p>
+      <p><span>Color:</span> Golden</p>
+      <p><span>Friendly?</span> Yes, very friendly</p>
+    </div>
+    <a class="cta" href="tel:+50688887777">📞 Call Owner</a>
+    <a class="cta secondary" href="https://wa.me/50688887777">💬 WhatsApp</a>
+  </div>
+</body>
+</html>
